@@ -1,0 +1,23 @@
+{
+  "name": "minorproject",
+  "version": "1.0.0",
+  "description": "-  _Completing the necessary Front-End work_",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powrhouseofthecell/MinorProject.git"
+  },
+  "author": "Zuhaib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/powrhouseofthecell/MinorProject/issues"
+  },
+  "homepage": "https://github.com/powrhouseofthecell/MinorProject#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
