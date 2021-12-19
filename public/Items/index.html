@@ -1,222 +1,324 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Products Explore</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<body>
-  <div class="lightbox-blanket" id="lightbox_blanket">
-    <div class="pop-up-container">
-      <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-          <div class="go-back" ><i class="fa fa-arrow-left" onclick="GoBack();"></i>
-          </div>
-          <div class="product-details">
-            <div class="product-left">
-              <div class="product-info">
-                <div class="product-manufacturer">
-                  Leo Da Vinci
-                </div>
-                
-                <div class="product-title product-popup-title">
-                  Mona Lisa
-                  
-                </div>
-                <div class="product-price" price-data="320.03">
-                  $320<span class="product-price-cents">03</span>
-                </div>
-              </div>
-              <div class="product-image">
-                <img src="https://cdn.pixabay.com/photo/2013/01/05/21/02/art-74050_960_720.jpg" />
-              </div>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Products Explore</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <body>
+         <header id="header">
+            <div class="topnav" id="myTopnav">
+               <a id="active">ART2NFT.COM</a>
+               <a href="#">Home</a>
+               <!-- <div class="dropdown">
+               <button class="dropbtn"> Categories
+                  <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="dropdown-content animate">
+                  <a href="cat1.html">Cubic</a>
+                  <a href="cat2.html">Square</a>
+               </div>
+            </div> -->
+               <a href="./Info/info.html">Info</a>
+               <a href="./Authentication/index.html">Login</a>
+               <a
+                  href="javascript:void(0);"
+                  style="font-size: 15px"
+                  class="icon"
+                  onclick="NavBar()"
+                  >&#9776;</a
+               >
             </div>
-            <div class="product-right">
-              <div class="product-description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio perspiciatis temporibus laudantium et enim molestiae, ducimus veritatis blanditiis necessitatibus in minus. Illo non architecto dignissimos veritatis asperiores assumenda dicta nostrum?.
-              </div>
-              
-              <div class="product-rating">
-                <i class="fa fa-star rating" star-data="1"></i>
-                <i class="fa fa-star rating" star-data="2"></i>
-                <i class="fa fa-star rating" star-data="3"></i>
-                <i class="fa fa-star" star-data="4"></i>
-                <i class="fa fa-star" star-data="5"></i>
-                <div class="product-rating-details">(3.1 - <span class="rating-count">1203</span> reviews)
-                </div>
+         </header>
+         <div class="lightbox-blanket" id="lightbox_blanket">
+            <div class="pop-up-container">
+               <div class="pop-up-container-vertical">
+                  <div class="pop-up-wrapper">
+                     <div class="go-back">
+                        <i class="fa fa-arrow-left" onclick="GoBack();"></i>
+                     </div>
+                     <div class="product-details">
+                        <div class="product-left">
+                           <div class="product-info">
+                              <div class="product-manufacturer">
+                                 Leo Da Vinci
+                              </div>
 
-              </div>
-              <div class="product-quantity">
-                <label for="product-quantity-input" class="product-quantity-label">Quantity</label>
-                <div class="product-quantity-subtract">
-                  <i class="fa fa-chevron-left"></i>
-                </div>
-                <div>
-                  <input type="text" id="product-quantity-input" placeholder="0" value="0" />
-                </div>
-                <div class="product-quantity-add">
-                  <i class="fa fa-chevron-right"></i>
-                </div>
-              </div>
-            </div>
-            <div class="product-bottom">
-              <div class="product-checkout">
-                Total Price
-                <div class="product-checkout-total">
-                  <i class="fa fa-usd"></i>
-                  <div class="product-checkout-total-amount">
-                    0.00
+                              <div class="product-title product-popup-title">
+                                 Mona Lisa
+                              </div>
+                              <div class="product-price" price-data="320.03">
+                                 $320<span class="product-price-cents">03</span>
+                              </div>
+                           </div>
+                           <div class="product-image">
+                              <img
+                                 src="https://cdn.pixabay.com/photo/2013/01/05/21/02/art-74050_960_720.jpg"
+                              />
+                           </div>
+                        </div>
+                        <div class="product-right">
+                           <div class="product-description">
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Odio perspiciatis temporibus
+                              laudantium et enim molestiae, ducimus veritatis
+                              blanditiis necessitatibus in minus. Illo non
+                              architecto dignissimos veritatis asperiores
+                              assumenda dicta nostrum?.
+                           </div>
+
+                           <div class="product-rating">
+                              <i class="fa fa-star rating" star-data="1"></i>
+                              <i class="fa fa-star rating" star-data="2"></i>
+                              <i class="fa fa-star rating" star-data="3"></i>
+                              <i class="fa fa-star" star-data="4"></i>
+                              <i class="fa fa-star" star-data="5"></i>
+                              <div class="product-rating-details">
+                                 (3.1 -
+                                 <span class="rating-count">1203</span> reviews)
+                              </div>
+                           </div>
+                           <div class="product-quantity">
+                              <label
+                                 for="product-quantity-input"
+                                 class="product-quantity-label"
+                                 >Quantity</label
+                              >
+                              <div class="product-quantity-subtract">
+                                 <i class="fa fa-chevron-left"></i>
+                              </div>
+                              <div>
+                                 <input
+                                    type="text"
+                                    id="product-quantity-input"
+                                    placeholder="0"
+                                    value="0"
+                                 />
+                              </div>
+                              <div class="product-quantity-add">
+                                 <i class="fa fa-chevron-right"></i>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-bottom">
+                           <div class="product-checkout">
+                              Total Price
+                              <div class="product-checkout-total">
+                                 <i class="fa fa-usd"></i>
+                                 <div class="product-checkout-total-amount">
+                                    0.00
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="product-checkout-actions">
+                              <button class="cart_button">
+                                 <a
+                                    class="add-to-cart"
+                                    href="#"
+                                    onclick="AddToCart(event);"
+                                    >Add to Cart</a
+                                 >
+                              </button>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="product-checkout-actions">
-                <button class="cart_button">
-                  <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                </button>
-                
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="random-background">
-    <div class="itemlist">
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(1);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="1">
-                Leo DaVinci
-              </div>
-              
+         </div>
+         <div class="random-background">
+            <div class="itemlist">
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(1);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="1"
+                           >
+                              Leo DaVinci
+                           </div>
 
-              <div class="product-title" data-item="1">
-               Mona Lisa
-              </div>
-              <div class="product-price" price-data="320.03" item-data="1">
-                $320<span class="product-price-cents">03</span>
-              </div>
-            </div>
-            <div class="product-image" item-data="1">
-              <img src="https://cdn.pixabay.com/photo/2013/01/05/21/02/art-74050_960_720.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(2);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="2">
-                Van Gogh
-              </div>
+                           <div class="product-title" data-item="1">
+                              Mona Lisa
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="320.03"
+                              item-data="1"
+                           >
+                              $320<span class="product-price-cents">03</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="1">
+                           <img
+                              src="https://cdn.pixabay.com/photo/2013/01/05/21/02/art-74050_960_720.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(2);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="2"
+                           >
+                              Van Gogh
+                           </div>
 
-              <div class="product-title" data-item="2">
-                Starry Night
-              </div>
-              <div class="product-price" price-data="320.03" item-data="2">
-                $320<span class="product-price-cents">03</span>
-              </div>
-            </div>
-            <div class="product-image" item-data="2">
-              <img src="https://www.vangoghgallery.com/img/starry_night_full.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(3);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="3">
-               Van Gogh
-              </div>
+                           <div class="product-title" data-item="2">
+                              Starry Night
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="320.03"
+                              item-data="2"
+                           >
+                              $320<span class="product-price-cents">03</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="2">
+                           <img
+                              src="https://www.vangoghgallery.com/img/starry_night_full.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(3);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="3"
+                           >
+                              Van Gogh
+                           </div>
 
-              <div class="product-title" data-item="3">
-                Van Gogh Self Potrait
-              </div>
-              <div class="product-price" price-data="320.03" item-data="3">
-                $320<span class="product-price-cents">03</span>
-              </div>
+                           <div class="product-title" data-item="3">
+                              Van Gogh Self Potrait
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="320.03"
+                              item-data="3"
+                           >
+                              $320<span class="product-price-cents">03</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="3">
+                           <img
+                              src="https://media.nga.gov/iiif/11d4bc47-9511-42e3-a373-98e8e2db8962/full/full/0/default.jpg?attachment_filename=self-portrait_1998.74.5.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(4);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="4"
+                           >
+                              Karl Brullov
+                           </div>
+                           <div class="product-title" data-item="4">
+                              The Last Day of Pompeii
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="320.03"
+                              item-data="4"
+                           >
+                              $320<span class="product-price-cents">03</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="4">
+                           <img
+                              src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-last-day-of-pompeii-detail-no4-karl-bryullov.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(5);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="5"
+                           >
+                              August Schenck
+                           </div>
+                           <div class="product-title" data-item="5">
+                              Suffering
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="169.49"
+                              item-data="5"
+                           >
+                              $<span class="product-price-dollar">169</span
+                              ><span class="product-price-cents">49</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="5">
+                           <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/August_Friedrich_Albrecht_Schenck_-_Anguish_-_Google_Art_Project.jpg/1200px-August_Friedrich_Albrecht_Schenck_-_Anguish_-_Google_Art_Project.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemlist-item-wrapper" onclick="OpenProduct(6);">
+                  <div class="product-details">
+                     <div class="">
+                        <div class="product-info">
+                           <div
+                              class="product-popup-manufacturer"
+                              data-item="6"
+                           >
+                              Van Gogh
+                           </div>
+                           <div class="product-title" data-item="6">
+                              Sunflowers
+                           </div>
+                           <div
+                              class="product-price"
+                              price-data="320.03"
+                              item-data="6"
+                           >
+                              $320<span class="product-price-cents">03</span>
+                           </div>
+                        </div>
+                        <div class="product-image" item-data="6">
+                           <img
+                              src="https://www.vangoghgallery.com/skin/img/sunflower_full.jpg"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="product-image" item-data="3">
-              <img src="https://media.nga.gov/iiif/11d4bc47-9511-42e3-a373-98e8e2db8962/full/full/0/default.jpg?attachment_filename=self-portrait_1998.74.5.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(4);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="4">
-                Karl Brullov
-              </div>
-              <div class="product-title" data-item="4">
-                The Last Day of Pompeii
-              </div>
-              <div class="product-price" price-data="320.03" item-data="4">
-                $320<span class="product-price-cents">03</span>
-              </div>
-            </div>
-            <div class="product-image" item-data="4">
-              <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-last-day-of-pompeii-detail-no4-karl-bryullov.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(5);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="5">
-                August Schenck
-              </div>
-              <div class="product-title" data-item="5">
-                Suffering
-              </div>
-              <div class="product-price" price-data="169.49" item-data="5">
-                $<span class="product-price-dollar">169</span><span class="product-price-cents">49</span>
-              </div>
-            </div>
-            <div class="product-image" item-data="5">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/August_Friedrich_Albrecht_Schenck_-_Anguish_-_Google_Art_Project.jpg/1200px-August_Friedrich_Albrecht_Schenck_-_Anguish_-_Google_Art_Project.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="itemlist-item-wrapper" onclick="OpenProduct(6);">
-        <div class="product-details">
-          <div class="">
-            <div class="product-info">
-              <div class="product-popup-manufacturer" data-item="6">
-                Van Gogh
-              </div>
-              <div class="product-title" data-item="6">
-               Sunflowers
-              </div>
-              <div class="product-price" price-data="320.03" item-data="6">
-                $320<span class="product-price-cents">03</span>
-              </div>
-            </div>
-            <div class="product-image" item-data="6">
-              <img src="https://www.vangoghgallery.com/skin/img/sunflower_full.jpg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
-
-</body>
+         </div>
+      </body>
+      <!-- partial -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+      <script src="./script.js"></script>
+   </body>
 </html>
