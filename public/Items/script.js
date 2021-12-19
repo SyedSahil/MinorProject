@@ -1,5 +1,12 @@
 //Go Back
 function OpenProduct(i) {
+   var x = document.getElementById('lightbox_blanket');
+   if (x.style.visibility === 'hidden') {
+      x.style.visibility = 'visible';
+   } else {
+      x.style.visibility = 'hidden';
+   }
+
    var cardManufacturer = document.querySelectorAll(
       `.product-popup-manufacturer[data-item='${i}']`
    );
@@ -13,10 +20,13 @@ function OpenProduct(i) {
    );
 
    const title = cardTitle[0].innerHTML;
+   //console.log(title);
 
    const el = document.getElementsByClassName('product-popup-title');
 
+   //console.log(el[0].innerHTML);
    el[0].innerHTML = title;
+   //onsole.log(el[0].innerHTML);
 
    var i = $('.product-image[item-data="' + i + '"] img');
    var lbi = $('.lightbox-blanket .product-image img');
@@ -29,6 +39,12 @@ function OpenProduct(i) {
 }
 function GoBack() {
    $('.lightbox-blanket').toggle();
+   var x = document.getElementById('lightbox_blanket');
+   if (x.style.visibility === 'visible') {
+      x.style.visibility = 'hidden';
+   } else {
+      x.style.visibility = 'visible';
+   }
 }
 
 //Calculate new total when the quantity changes.

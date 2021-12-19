@@ -98,6 +98,7 @@ a:hover {
    top: 0;
    width: 100vw;
    z-index: 20;
+   visibility: hidden;
 }
 
 .pop-up-container {
