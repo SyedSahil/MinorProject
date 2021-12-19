@@ -34,7 +34,7 @@ a:hover {
 .random-background {
    background-color: #36a88e;
    background-image: -webkit-linear-gradient(top, #36a88e, rgba(0, 0, 0, 0.74));
-   height: 150vh;
+   height: 130vh;
    width: 100vw;
 }
 
@@ -98,7 +98,6 @@ a:hover {
    top: 0;
    width: 100vw;
    z-index: 20;
-   visibility: hidden;
 }
 
 .pop-up-container {
